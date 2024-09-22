@@ -1,0 +1,41 @@
+.module-side {
+    position: fixed;
+    top: 70px;
+    /* Adjust this to match the height of your header */
+    left: 0;
+    width: 200px;
+    height: calc(100% - 50px);
+    /* Adjust this to match the height of your header */
+    background-color: #f4f4f4;
+    border-right: 1px solid #ddd;
+
+    display: flex;
+    align-items: center;
+
+
+
+}
+
+/* eto naman ang child container  */
+.progress-container {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+
+}
+
+
+
+
+@media (max-width: 768px) {
+    .module-side {
+        width: 100%;
+        height: 250px;
+        position: static;
+        display: flex;
+        justify-content: center;
+        top: 0;
+
+    }
+
+}

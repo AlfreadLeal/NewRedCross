@@ -1,0 +1,160 @@
+/* .example-header {
+
+    background-color: rgb(233, 24, 24);
+    opacity: 85%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+} */
+
+
+
+
+.nav-container {
+    background-color: rgb(206, 192, 255);
+    width: 100px;
+    display: flex;
+    top: 100px;
+    flex-direction: column;
+    position: fixed;
+    align-items: left;
+    bottom: 0;
+    left: 0;
+
+}
+
+.icon-container {
+    margin-top: 10px;
+}
+
+.nav-container img {
+    width: 25px;
+
+}
+
+.nav-container p {
+    font-size: 15px;
+    font-weight: 700;
+    color: gray;
+}
+
+/* mga icons property start here */
+
+.home-bar {
+    margin-top: -5px;
+    top: 0;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    width: 100px;
+}
+
+.module-bar {
+
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    width: 100px;
+
+}
+
+.profile-bar {
+    height: 100px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+
+}
+
+.logout-bar {
+    height: 100px;
+    cursor: pointer;
+    display: flex;
+    width: 100px;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+/* icons property ends here */
+.home-bar:hover {
+    background: linear-gradient(to right, red, white);
+    color: black
+}
+
+
+
+.module-bar:hover {
+    background: linear-gradient(to right, red, white);
+    color: black
+}
+
+.profile-bar:hover {
+    background: linear-gradient(to right, red, white);
+}
+
+.logout-bar:hover {
+    background: linear-gradient(to right, red, white);
+}
+
+
+
+.locked-module .message-text {
+    margin-top: 10px;
+    font-size: 12px;
+    color: black;
+    opacity: 30%;
+    cursor: pointer;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    position: relative;
+
+}
+
+.fa-solid.fa-lock {
+    color: black;
+    font-size: 25px;
+    position: absolute;
+    padding-left: 3px;
+    cursor: pointer;
+
+}
+
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    top: -20px;
+    /* Adjust size as needed */
+}
+
+.tooltip-container .tooltip-text {
+    visibility: hidden;
+    width: 160px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    /* Position above the icon */
+    left: 50%;
+    margin-left: -80px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
